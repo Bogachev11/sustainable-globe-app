@@ -42,8 +42,8 @@ const SimpleEarthGlobe = () => {
     let selectedCityName = null;
     
     Promise.all([
-  d3.json(process.env.PUBLIC_URL + '/data/ne_50m_admin_0_countries.json'),
-  d3.csv(process.env.PUBLIC_URL + '/data/sust_index_cities_2024.csv')
+      d3.json('./data/ne_50m_admin_0_countries.json'),
+      d3.csv('./data/sust_index_cities_2024.csv')
     ]).then(([geoData, citiesData]) => {
       console.log('Загружены данные:', citiesData.length + ' городов');
       
