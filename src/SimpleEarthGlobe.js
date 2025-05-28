@@ -22,7 +22,7 @@ const SimpleEarthGlobe = () => {
       .style('background-color', '#12122C');
     
     const globeSize = Math.min(width, height) * 0.7;
-    let scale = globeSize / 2 * 4; // Максимальный зум на Европу
+    let scale = globeSize / 2 * 3; // Максимальный зум на Европу
     
     const projection = d3.geoOrthographic()
       .scale(scale)
