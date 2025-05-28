@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import React, { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 import * as topojson from 'topojson-client';
@@ -22,7 +24,7 @@ const SimpleEarthGlobe = () => {
       .style('background-color', '#12122C');
     
     const globeSize = Math.min(width, height) * 0.7;
-    let scale = globeSize / 2 * 3; // Максимальный зум на Европу
+    let scale = globeSize / 2 * 2; // Максимальный зум на Европу
     
     const projection = d3.geoOrthographic()
       .scale(scale)
